@@ -1,0 +1,10 @@
+/*** Général ***/
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* Color */
+:root {
+    --first-color: #0065FC; /* var(--first-color) */
+    --second-color: #DEEBFF; /* var(--second-color) */
+    --third-color: #D9D9D9; /* var(--third-color) */
+}

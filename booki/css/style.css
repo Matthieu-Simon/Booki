@@ -8,3 +8,174 @@
     --second-color: #DEEBFF; /* var(--second-color) */
     --third-color: #D9D9D9; /* var(--third-color) */
 }
+* {
+    border: 1px red solid;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1400px;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*** Header ***/
+.img-logo {
+    width: 3.8em;
+    height: 1.2em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.navigation a {
+    margin-right: 3.5em;
+}
+
+/*** Main ***/
+/* Search Bar */
+.top-main-section {
+    padding: 0 30px;
+}
+.filter {
+    display: flex;
+    align-items: center;
+}
+
+.filter h4, button {
+    margin-right: 25px;
+}
+
+.filter button {
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+}
+.main-section-container {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+/*** Card Location ***/
+.card-location {
+    background-color: #fff;
+    border-radius: 20px;
+    height: 12.43em;
+    margin-bottom: 30px;
+}
+
+.card-location img {
+    width: 15.37em;
+    height: 7.75em;
+    border: 5px solid #fff;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+.title-left-card {
+    display: inline;
+    width: 12.75em;
+    height: 0.93em;
+    left: 1em;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.18em;
+}
+
+.text-left-card {
+    width: 12.75em;
+    height: 0.93em;
+    left: 1em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.87em;
+    line-height: 1em;
+}
+
+/* Left-section Location */
+.left-section {
+    background: var(--third-color);
+    border-radius: 20px;
+    width: 55em;
+    height: 39.12em;
+}
+
+.card-left-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.add-more-link {
+    color: #000;
+    font-weight: 700;
+    font-size: 1.12em;
+    line-height: 1.31em;
+    position: absolute;
+    left: 4.5%;
+    right: 82.84%;
+    top: 89.3%;
+    bottom: 7.35%;
+}
+/* Right-section Popularity */
+.right-section {
+    background: var(--third-color);
+    width: 26.25em;
+    height: 39.12em;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Card Popularity */
+.card-popularity {
+    background: #fff;
+    width: 21.43em;
+    height: 9em;
+    border-radius: 20px;
+    display: flex;
+}
+.card-popularity img {
+    width: 8.56em;
+    height: 9em;
+    border-radius: 20px;
+    object-fit: cover;
+}
+/*** Activity Section ***/
+article {
+    padding: 0 30px;
+}
+/* Card Activity */
+.activity {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card-activity img {
+    background-color: #fff;
+    width: 18.87em;
+    height: 27.81em;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/*** Footer ***/
+footer {
+    background: var(--third-color);
+    width: 83.68em;
+    height: 14.06em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a {
+    display: block;
+}

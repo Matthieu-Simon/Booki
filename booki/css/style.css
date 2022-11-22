@@ -6,11 +6,12 @@
 :root {
     --first-color: #0065FC; /* var(--first-color) */
     --second-color: #DEEBFF; /* var(--second-color) */
-    --third-color: #D9D9D9; /* var(--third-color) */
+    --third-color: #F2F2F2; /* var(--third-color) */
+    --fourth-color: #fff; /* var(--fourth-color) */
 }
-* {
+/* {
     border: 1px red solid;
-}
+}*/
 body {
     margin: 0;
     padding: 0;
@@ -18,30 +19,82 @@ body {
     max-width: 1400px;
     font-family: 'Raleway', sans-serif;
 }
-
+h2 {
+    font-weight: 700;
+    font-size: 1.37em;
+    line-height: 1.62;
+}
+h4 {
+    font-weight: 700;
+    line-height: 1.19em;
+}
+.filter, .filter button {
+    font-weight: 700;
+    font-size: 1.06em;
+    line-height: 1.25em;
+}
+input, footer h3 {
+    font-weight: 700;
+    font-size: 1.12em;
+    line-height: 1.31em;
+}
+.top-main-section p, footer p {
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.19em;
+}
 a {
     text-decoration: none;
 }
-
+/* Card Left & Right */
+.card-content {
+    margin-left: 20px;
+}
 /*** Header ***/
 .img-logo {
     width: 3.8em;
     height: 1.2em;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
 }
-
 .navigation a {
     margin-right: 3.5em;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.18em;
+    color: #000;
 }
-
+.navigation a:hover {
+    border-top: 2px var(--first-color) solid;
+    color: var(--first-color);
+    width: 100%;
+    padding-top: 20px;
+}
 /*** Main ***/
 /* Search Bar */
+.search-bar {
+    border: 1px solid var(--third-color);
+    outline: none;
+    width: 29%;
+    border-radius: 5px;
+}
+.search-bar i {
+    background-color: var(--third-color);
+    padding: 5px;
+}
+input::placeholder {
+    color: #000;
+}
+.btn-search-bar {
+    border: none;
+    padding: 5px;
+    background-color: var(--first-color);
+    color: var(--fourth-color);
+}
 .top-main-section {
     padding: 0 30px;
 }
@@ -49,11 +102,9 @@ nav {
     display: flex;
     align-items: center;
 }
-
 .filter h4, button {
     margin-right: 25px;
 }
-
 .filter button {
     height: 20px;
     border-radius: 10px;
@@ -62,22 +113,21 @@ nav {
 .main-section-container {
     display: flex;
     justify-content: space-evenly;
-    
 }
 /*** Card Location ***/
 .card-location {
-    background-color: #fff;
+    background-color: var(--fourth-color);
     border-radius: 20px;
-    height: 12.43em;
-    margin-bottom: 30px;
+    height: 14.5em;
+    margin: 0 10px 20px 0;
 }
-
 .card-location img {
     width: 15.37em;
     height: 7.75em;
-    border: 5px solid #fff;
+    border: 5px solid var(--fourth-color);
     border-radius: 20px 20px 0 0;
     object-fit: cover;
+    padding: 1px;
 }
 .title-left-card {
     display: inline;
@@ -89,7 +139,6 @@ nav {
     font-size: 1em;
     line-height: 1.18em;
 }
-
 .text-left-card {
     width: 12.75em;
     height: 0.93em;
@@ -99,7 +148,12 @@ nav {
     font-size: 0.87em;
     line-height: 1em;
 }
-
+.stars-location {
+    color: var(--first-color);
+}
+.fa-grey {
+    color: var(--third-color)
+}
 /* Left-section Location */
 .left-section {
     background: var(--third-color);
@@ -107,7 +161,9 @@ nav {
     width: 55em;
     height: 39.12em;
 }
-
+.left-section h2 {
+    margin-left: 25px;
+}
 .card-left-section {
     display: flex;
     flex-flow: row wrap;
@@ -118,13 +174,12 @@ nav {
     font-weight: 700;
     font-size: 1.12em;
     line-height: 1.31em;
-    position: absolute;
-    left: 4.5%;
-    right: 82.84%;
-    top: 89.3%;
-    bottom: 7.35%;
+    margin-left: 25px;
 }
 /* Right-section Popularity */
+.title-right-section {
+    display: flex;
+}
 .right-section {
     background: var(--third-color);
     width: 26.25em;
@@ -134,14 +189,19 @@ nav {
     flex-direction: column;
     align-items: center;
 }
-
+.right-section h2 i {
+    margin-left: 110px;
+    color: #0065FC;
+}
 /* Card Popularity */
 .card-popularity {
-    background: #fff;
+    background: var(--fourth-color);
     width: 21.43em;
     height: 9em;
     border-radius: 20px;
     display: flex;
+    margin-bottom: 25px;
+    padding: 5px;
 }
 .card-popularity img {
     width: 8.56em;
@@ -157,25 +217,32 @@ article {
 .activity {
     display: flex;
     justify-content: space-between;
-    
+}
+.card-activity {
+    background-color: #FFF;
+    border-radius: 20px;
+}
+.card-activity h4 {
+    padding-left: 15px;
 }
 .card-activity img {
-    background-color: #fff;
     width: 18.87em;
-    height: 27.81em;
-    border-radius: 20px;
+    height: 24.31em;
+    border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
-
 /*** Footer ***/
 footer {
     background: var(--third-color);
-    width: 83.68em;
+    width: 83.2em;
     height: 14.06em;
+    margin: 40px 31px 0;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
 }
-footer a {
-    display: block;
+
+footer div {
+    padding-top: 30px;
 }
+

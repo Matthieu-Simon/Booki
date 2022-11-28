@@ -9,7 +9,7 @@
     --third-color: #F2F2F2; /* var(--third-color) */
     --fourth-color: #fff; /* var(--fourth-color) */
 }
-/* {
+/* * {
     border: 1px red solid;
 }*/
 body {
@@ -77,23 +77,33 @@ nav {
 /*** Main ***/
 /* Search Bar */
 .search-bar {
-    border: 1px solid var(--third-color);
+    
     outline: none;
-    width: 29%;
+    width: fit-content;
     border-radius: 5px;
+    display: flex;
+    
 }
 .search-bar i {
     background-color: var(--third-color);
-    padding: 5px;
+    padding: 5px 5px 5px 10px;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    align-items: center;
+}
+input {
+    border: 2px solid var(--third-color);
+    height: 30px;
 }
 input::placeholder {
     color: #000;
 }
 .btn-search-bar {
     border: none;
-    padding: 5px;
+    padding: 5px 10px 5px 5px;
     background-color: var(--first-color);
     color: var(--fourth-color);
+    border-radius: 0 15px 15px 0;
 }
 .top-main-section {
     padding: 0 30px;
@@ -102,17 +112,38 @@ input::placeholder {
     display: flex;
     align-items: center;
 }
-.filter h4, button {
+.filter h4 {
     margin-right: 25px;
 }
 .filter button {
-    height: 20px;
-    border-radius: 10px;
-    border: none;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid var(--third-color);
+    cursor: pointer;
+    padding: 0 20px;
+    margin-right: 25px;
+    background-color: var(--fourth-color);
+}
+.filter button i {
+    margin-right: 10px;
+    color: var(--first-color);
+}
+.filter button:hover {
+    background-color: var(--second-color);
 }
 .main-section-container {
     display: flex;
     justify-content: space-evenly;
+}
+.fa-icon {
+    border: 2px solid var(--third-color);
+    border-radius: 50%;
+    color: var(--first-color);
+    padding-top: 3px;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
 }
 /*** Card Location ***/
 .card-location {
@@ -120,6 +151,7 @@ input::placeholder {
     border-radius: 20px;
     height: 14.5em;
     margin: 0 10px 20px 0;
+    box-shadow: 2px 3px 3px 2px var(--third-color);
 }
 .card-location img {
     width: 15.37em;
@@ -202,6 +234,7 @@ input::placeholder {
     display: flex;
     margin-bottom: 25px;
     padding: 5px;
+    box-shadow: 2px 3px 3px 2px var(--third-color);
 }
 .card-popularity img {
     width: 8.56em;
@@ -221,6 +254,7 @@ article {
 .card-activity {
     background-color: #FFF;
     border-radius: 20px;
+    box-shadow: 1px 2px 2px 1px var(--third-color);
 }
 .card-activity h4 {
     padding-left: 15px;
@@ -246,3 +280,34 @@ footer div {
     padding-top: 30px;
 }
 
+/*** MEDIA QUERIES ***/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .main-section-container {
+        flex-wrap: wrap;
+    }
+    .card-location {
+        width: 246px;
+        height: 199px;
+    }
+    .right-section {
+        width: 883px;
+        height: 278px;
+    }
+    .card-right-container {
+        display: flex;
+    }
+    .card-popularity {
+        width: 252px;
+        height: 144px;
+    }
+    .card-popularity .card-content, h4, p {
+        margin: 0;
+    }
+    .card-activity {
+        width: 182px;
+        height: 267px;
+    }
+    footer {
+        width: 880px;
+    }
+}

@@ -28,6 +28,10 @@ h4 {
     font-weight: 700;
     line-height: 1.19em;
 }
+p {
+    font-size: 0.87em;
+    margin-top: 5px;
+}
 .filter, .filter button {
     font-weight: 700;
     font-size: 1.06em;
@@ -49,7 +53,13 @@ a {
 }
 /* Card Left & Right */
 .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-left: 20px;
+}
+.card-content h4 {
+    margin: 0;
 }
 /*** Header ***/
 .img-logo {
@@ -143,7 +153,7 @@ input::placeholder {
 .main-section-container {
     display: flex;
     justify-content: space-around;
-    max-width: 100%;
+    width: 100%;
 }
 .fa-icon {
     border: 2px solid var(--third-color);
@@ -159,8 +169,7 @@ input::placeholder {
 .card-location {
     background-color: var(--fourth-color);
     border-radius: 20px;
-    height: 14.5em;
-    width: 15.37;
+    height: 13.5em;
     margin: 0 5px 20px 0;
     box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.033);
 }
@@ -172,25 +181,6 @@ input::placeholder {
     object-fit: cover;
     padding: 1px;
 }
-.title-left-card {
-    display: inline;
-    width: 12.75em;
-    height: 0.93em;
-    left: 1em;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1em;
-    line-height: 1.18em;
-}
-.text-left-card {
-    width: 12.75em;
-    height: 0.93em;
-    left: 1em;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.87em;
-    line-height: 1em;
-}
 .stars-location {
     color: var(--first-color);
 }
@@ -201,8 +191,11 @@ input::placeholder {
 .left-section {
     background: var(--third-color);
     border-radius: 20px;
-    width: 65%;
-    height: 39.12em;
+    max-width: 65%;
+    height: 36.12em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .left-section h2 {
     margin-left: 25px;
@@ -216,17 +209,22 @@ input::placeholder {
     color: #000;
     font-weight: 700;
     font-size: 1.12em;
-    line-height: 1.31em;
-    margin-left: 25px;
+    margin: 0 0 20px 25px;
 }
 /* Right-section Popularity */
-.title-right-section {
+.right-section-title {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-section-title i {
+    color: var(--first-color);
 }
 .right-section {
     background: var(--third-color);
     max-width: 30%;
-    height: 39.12em;
+    height: 36.12em;
     padding: 0 30px;
     border-radius: 20px;
     display: flex;
@@ -241,7 +239,7 @@ input::placeholder {
 .card-popularity {
     background: var(--fourth-color);
     width: 21.43em;
-    height: 9em;
+    height: 8em;
     border-radius: 20px;
     display: flex;
     margin-bottom: 25px;
@@ -250,8 +248,8 @@ input::placeholder {
 }
 .card-popularity img {
     width: 8.56em;
-    height: 9em;
-    border-radius: 20px;
+    height: 8em;
+    border-radius: 20px 0 0 20px;
     object-fit: cover;
 }
 /*** Activity Section ***/

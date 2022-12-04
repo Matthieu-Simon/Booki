@@ -293,9 +293,6 @@ footer div {
 /*** MEDIA QUERIES ***/
 /* Mode Tablette */
 @media screen and (max-width: 991px) {
-    body {
-        max-height: 100vh;
-    }
     /* Header */
     nav {
         padding: 30px 30px 15px 30px;
@@ -304,12 +301,14 @@ footer div {
     .main-section-container {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .card-content {
         margin-left: 10px;
     }
     .card-content h4, p {
         margin-bottom: 3px;
+        margin: 0;
     }
     .card-location, .card-popularity {
         font-size: 0.87em;
@@ -320,40 +319,41 @@ footer div {
     /* Left Section */
     .left-section {
         height: 35em;
-        width: 100%;
+        max-width: 90%;
         margin-bottom: 50px;
         padding: 15px;
     }
     .card-location {
-        width: 25.3%;
-        height: 199px;
+        width: 25%;
+    }
+    .card-location h4, p, i {
+        margin-bottom: 5px;
     }
     .card-left-section {
         justify-content: space-around;
     }
     /* Right Section */
     .right-section {
-        width: 100%;
+        max-width: 90%;
         height: 15.6em;
         padding: 0 38px;
+    }
+    .right-section-title i {
+        margin-right: 20px;
     }
     .card-right-container {
         display: flex;
     }
     .card-popularity {
-        width: 252px;
-        height: 100%;
+        max-width: 252px;
         margin-right: 20px;
     }
+    .card-popularity h4, p, i {
+        margin-bottom: 5px;
+    }
     .card-popularity img {
-        width: 6.6em;
+        max-width: 6.6em;
         border-radius: 20px 0 0 20px;
-    }
-    .card-content, h4, p {
-        margin: 0;
-    }
-    .stars-location {
-        margin-top: 20px;
     }
     /* Activity Card */
     .activity {

@@ -16,7 +16,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 1400px;
+    width: 1400px;
     font-family: 'Raleway', sans-serif;
 }
 h2 {
@@ -194,7 +194,7 @@ input::placeholder {
 .left-section {
     background: var(--third-color);
     border-radius: 20px;
-    max-width: 65%;
+    width: 65%;
     height: 36.12em;
     display: flex;
     flex-direction: column;
@@ -226,7 +226,7 @@ input::placeholder {
 }
 .right-section {
     background: var(--third-color);
-    max-width: 30%;
+    width: 30%;
     height: 36.12em;
     padding: 0 30px;
     border-radius: 20px;
@@ -300,6 +300,10 @@ footer div {
     nav {
         padding: 30px 30px 15px 30px;
     }
+    /* Search Bar */
+    .form i {
+        margin-bottom: 0;
+    }
     /* Main Section */
     .main-section-container {
         display: flex;
@@ -322,12 +326,15 @@ footer div {
     /* Left Section */
     .left-section {
         height: 35em;
-        max-width: 90%;
+        width: 95%;
         margin-bottom: 50px;
         padding: 15px;
     }
     .card-location {
         width: 25%;
+    }
+    .card-location img {
+        width: 96%;
     }
     .card-location h4, p, i {
         margin-bottom: 5px;
@@ -337,7 +344,7 @@ footer div {
     }
     /* Right Section */
     .right-section {
-        max-width: 90%;
+        width: 91.5%;
         height: 15.6em;
         padding: 0 38px;
     }
@@ -348,7 +355,7 @@ footer div {
         display: flex;
     }
     .card-popularity {
-        max-width: 252px;
+        width: 100%;
         margin-right: 20px;
     }
     .card-popularity h4, p, i {
@@ -360,10 +367,10 @@ footer div {
     }
     /* Activity Card */
     .activity {
-        max-width: 100%;
+        width: 100%;
     }
     .card-activity {
-        max-width: 20%;
+        width: 20%;
     }
     .card-activity img {
         max-width: 100%;
@@ -374,7 +381,7 @@ footer div {
     }
     /* Footer */
     footer {
-        max-width: 95%;
+        width: 95%;
         justify-content: space-evenly;
     }
     footer p {
@@ -382,7 +389,7 @@ footer div {
     }
 }
 /* Mode Mobile */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     /* Header */
     nav {
         display: flex;
@@ -418,12 +425,12 @@ footer div {
     }
     .filter {
         display: flex;
-        flex-wrap: wrap;
-        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .tag {
         display: flex;
-        flex-wrap: nowrap;
+        flex-direction: column;
     }
     .search-bar button i {
         color: var(--fourth-color);
@@ -456,6 +463,7 @@ footer div {
     }
     .card-location {
         width: 100%;
+        border: 1px solid black;
     }
     .card-location img {
         width: 96.5%;
@@ -466,22 +474,33 @@ footer div {
     /*** Right Section ***/
     .right-section {
         height: 50%;
+        width: 100%;
     }
     .card-right-section {
         display: flex;
         flex-direction: column;
     }
+    .card-popularity {
+        max-width: none;
+    }
     /* Activity Section */
     .article {
-        max-width: 90%;
+        max-width: 100%;
     }
     .activity {
+        display: flex;
         flex-direction: column;
         align-items: center;
         max-width: 100%;
     }
     .card-activity {
         max-width: 100%;
+        height: 25%;
+    }
+    .card-activity img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
     }
     /* Footer */
     footer {
@@ -489,6 +508,7 @@ footer div {
         flex-direction: column;
         height: auto;
         padding-bottom: 2em;
+        width: auto;
     }
     footer div {
         margin-left: 2em;

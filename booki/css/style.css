@@ -92,7 +92,7 @@ nav {
 .top-main-section h2 {
     margin-bottom: 0;
 }
-.top-main-section p {
+.info-main-section {
     margin: 0 0 20px 0;
 }
 .top-main-section .form {
@@ -423,6 +423,17 @@ footer div {
         margin-bottom: 10px;
         line-height: 1em;
     }
+    .text-main-section p {
+        margin: 0;
+    }
+    .text-main-section {
+        width: 50%;
+        margin: auto;
+    }
+    .info-main-section {
+        width: 50%;
+        margin: 20px auto;
+    }
     /* Search bar & Filter */
     .top-main-section .form {
         margin: 10px 0;
@@ -433,14 +444,20 @@ footer div {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        width: 50%;
+        margin: auto;
     }
     .filter button {
-        width: 15%;
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    .title-filter {
+        width: 100%;
     }
     .tag {
         width: 100%;
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
     }
     .search-bar button i {

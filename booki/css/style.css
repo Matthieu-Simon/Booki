@@ -220,7 +220,7 @@ input::placeholder {
 .right-section-title {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .right-section-title i {
@@ -230,7 +230,6 @@ input::placeholder {
     background: var(--third-color);
     width: 30%;
     height: 36.12em;
-    padding: 0 30px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -346,14 +345,18 @@ footer {
         height: 15.6em;
         padding: 0 38px;
     }
+    .right-section-title {
+        justify-content: space-between;
+    }
     .right-section-title i {
         margin-right: 20px;
     }
     .card-right-section {
+        width: 100%;
         display: flex;
+        justify-content: space-between;
     }
     .card-popularity {
-        width: 100%;
         margin-right: 20px;
     }
     .card-popularity h4, p, i {
@@ -366,6 +369,7 @@ footer {
     /* Activity Card */
     .activity {
         width: 100%;
+        justify-content: space-between;
     }
     .card-activity {
         width: 20%;
@@ -389,27 +393,31 @@ footer {
 /* Mode Mobile */
 @media screen and (min-width: 320px) and (max-width: 767px) {
     /* Header */
+    header {
+        width: 30%;
+        margin: auto;
+    }
     nav {
         display: flex;
         flex-direction: column;
-        padding: 2em;
+        padding: 30px;
     }
     .img-logo {
         padding: 20px 0 40px 0;
     }
     .navigation {
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
-        border-bottom: 2px solid var(--third-color);
+        border-bottom: 3px solid var(--third-color);
     }
     .navigation a {
         margin: 0;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
     .navigation a:hover {
         border-top: none;
-        border-bottom: 2px var(--first-color) solid;
+        border-bottom: 3px var(--first-color) solid;
         color: var(--first-color);
     }
     .top-main-section {
@@ -434,7 +442,7 @@ footer {
     }
     /* Search bar & Filter */
     .top-main-section .form {
-        margin: 10px 0;
+        margin: 20px 0;
         display: flex;
         justify-content: center;
     }
@@ -508,7 +516,7 @@ footer {
     /*** Right Section ***/
     .right-section {
         height: 50%;
-        width: 50%;
+        width: 30%;
         padding: 0;
     }
     .right-section-title {
@@ -520,9 +528,6 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .card-popularity {
-        width: 50%;
     }
     /* Activity Section */
 
@@ -557,14 +562,15 @@ footer {
     footer {
         display: flex;
         flex-direction: column;
-        align-items: center;
         height: auto;
         padding-bottom: 2em;
         margin: auto;
-        width: 50%;
+        width: 30%;
     }
     .link-footer {
         width: 50%;
+        flex-direction: column;
+        margin-left: 20px;
     }
     .link-footer h3, p {
         margin-left: 1em;

@@ -9,9 +9,11 @@
     --third-color: #F2F2F2; /* var(--third-color) */
     --fourth-color: #fff; /* var(--fourth-color) */
 }
-* {
+
+/* * {
     border: 1px red solid;
-}
+} */
+
 body {
     margin: 0;
     padding: 0;
@@ -281,18 +283,14 @@ article {
 /*** Footer ***/
 footer {
     background: var(--third-color);
-    width: 83.2em;
-    height: 14.06em;
+    width: 95%;
     margin: 40px 31px 0;
+}
+.link-footer {
     display: flex;
     justify-content: space-around;
-    align-items: stretch;
+    padding: 30px 0;
 }
-
-footer div {
-    padding-top: 30px;
-}
-
 /*** MEDIA QUERIES ***/
 /* Mode Tablette */
 @media screen and (max-width: 991px) {

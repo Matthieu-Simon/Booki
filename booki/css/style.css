@@ -297,6 +297,9 @@ footer {
 /*** MEDIA QUERIES ***/
 /* Mode Tablette */
 @media screen and (max-width: 992px) {
+    body {
+        max-width: 100%;
+    }
     /* Header */
     nav {
         padding: 30px 30px 15px 30px;
@@ -327,10 +330,10 @@ footer {
         margin-bottom: 50px;
     }
     .card-location {
-        width: 30%;
+        width: 25%;
     }
     .card-location img {
-        width: 97%;
+        width: 94.8%;
     }
     .card-location h4, p, i {
         margin-bottom: 5px;
@@ -349,7 +352,7 @@ footer {
         margin-left: 25px
     }
     .right-section-title i {
-        margin-right: 20px;
+        margin-right: 40px;
     }
     .card-right-section {
         display: flex;
@@ -357,12 +360,15 @@ footer {
         justify-content: space-around;
         width: 100%;
     }
+    .card-popularity {
+        width: 230px;
+    }
     .card-popularity h4, p, i {
         margin-bottom: 5px;
     }
     .card-popularity img {
         border-radius: 20px 0 0 20px;
-        width: 6.6em;
+        width: 100px;
     }
     /* Activity Card */
     .activity {
@@ -374,10 +380,10 @@ footer {
     }
     .card-activity img {
         max-width: 100%;
-        height: 267px;
+        height: 250px;
     }
     .card-activity h4 {
-        padding: 15px;
+        margin: 5px;
     }
     /* Footer */
     footer {

@@ -154,7 +154,7 @@ input::placeholder {
 }
 .main-section-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
 }
 .fa-icon {
@@ -174,7 +174,6 @@ input::placeholder {
 .card-location {
     background-color: var(--fourth-color);
     border-radius: 20px;
-    height: 50%;
     margin: 0 5px 20px 0;
     padding-bottom: 5px;
     box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.033);
@@ -182,7 +181,7 @@ input::placeholder {
 .card-location img {
     width: 246px;
     height: 124px;
-    border: 5px solid var(--fourth-color);
+    border: 3px solid var(--fourth-color);
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     padding: 1px;
@@ -333,7 +332,7 @@ footer {
         width: 25%;
     }
     .card-location img {
-        width: 94.8%;
+        width: 96%;
     }
     .card-location h4, p, i {
         margin-bottom: 5px;
@@ -352,7 +351,7 @@ footer {
         margin-left: 25px
     }
     .right-section-title i {
-        margin-right: 40px;
+        margin-right: 30px;
     }
     .card-right-section {
         display: flex;
@@ -379,7 +378,7 @@ footer {
         width: 20%;
     }
     .card-activity img {
-        max-width: 100%;
+        width: 100%;
         height: 250px;
     }
     .card-activity h4 {
@@ -412,12 +411,13 @@ footer {
     }
     .navigation {
         display: flex;
-        justify-content: space-around;
-        width: 50%;
+        width: 100%;
     }
     .navigation a {
         padding-bottom: 30px;
         margin: 0;
+        width: 100%;
+        text-align: center;
     }
     .navigation a:hover {
         border-top: none;
@@ -436,6 +436,9 @@ footer {
         margin: 20px auto;
     }
     /* Search bar & Filter */
+    .top-main-section {
+        padding: 0 15px;
+    }
     .top-main-section .form {
         margin: 20px 0;
         display: flex;
@@ -444,21 +447,24 @@ footer {
     .filter {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        margin: auto;
+        align-items: stretch;
+        
+        width: 100%;
+    }
+    .filter h4 {
+        margin: 0;
+        width: 100%;
     }
     .filter button {
-        width: 50%;
+        width: 40%;
         padding: 0;
-        margin: 0;
-    }
-    .title-filter {
-        width: 100%;
+        margin: 10px 0;
+        font-size: 0.8em;
     }
     .tag {
-        width: 100%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
     .search-bar button i {
         color: var(--fourth-color);
@@ -480,7 +486,6 @@ footer {
     /*** Left Section ***/
     .left-section {
         background-color: var(--fourth-color);
-        height: 50%;
         width: 100%;
         padding: 0;
         align-items: center;
@@ -490,14 +495,14 @@ footer {
     }
     .card-left-section {
         flex-direction: column;
-        width: 100%;
+        width: 90%;
     }
     .card-location {
         width: 100%;
         box-shadow: 2px 3px 3px 2px rgb(0 0 0 / 10%);
     }
     .card-location img {
-        width: 96.5%;
+        width: 97%;
     }
     .card-content p {
         margin: 0;
@@ -507,18 +512,20 @@ footer {
     }
     /*** Right Section ***/
     .right-section {
-        height: 50%;
-        padding: 0;
+        width: 100%;
+        border-radius: 0;
     }
     .right-section-title {
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     .card-right-section {
-        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .card-popularity {
+        width: 90%;
     }
     /* Activity Section */
     article {
@@ -532,22 +539,26 @@ footer {
         align-items: center;
         width: 100%;
     }
+    .title-section-activity {
+        width: 100%;
+    }
     .card-activity {
         width: 100%;
-        margin-bottom: 3em;
+        margin-bottom: 20px;
     }
     .card-activity img {
         width: 100%;
+        height: 150px;
     }
     .title-activity {
-        margin: 0 1em;
+        margin: 0 16px;
     }
     /* Footer */
     footer {
         display: flex;
         flex-direction: column;
         height: auto;
-        padding-bottom: 2em;
+        padding-bottom: 32px;
         width: 100%;
         margin: 0;
     }
@@ -557,6 +568,6 @@ footer {
         margin-left: 20px;
     }
     .link-footer h3, p {
-        margin-left: 1em;
+        margin-left: 16px;
     }
 }

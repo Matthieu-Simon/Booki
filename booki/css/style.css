@@ -261,7 +261,7 @@ input::placeholder {
     object-fit: cover;
 }
 /*** Activity Section ***/
-article {
+#activités {
     padding: 0 30px;
 }
 /* Card Activity */
@@ -545,16 +545,16 @@ footer {
     .title-section-activity {
         width: 100%;
     }
-    .card-border {
+    .activity-section div {
         width: 100%;
         margin-bottom: 20px;
     }
-    .card-border img {
+    .activity-section img {
         width: 100%;
         height: 150px;
     }
     .title-activity {
-        margin: 0 16px;
+        margin: 10px;
     }
     /*** Footer ***/
     footer {

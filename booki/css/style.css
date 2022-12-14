@@ -21,13 +21,14 @@ body {
     width: 1400px;
     font-family: 'Raleway', sans-serif;
 }
-h2 {
+h2, h4, .filter, .filter button, input, .footer h3 {
     font-weight: 700;
+}
+h2 {
     font-size: 1.37em;
-    line-height: 1.62;
+    line-height: 1.62em;
 }
 h4 {
-    font-weight: 700;
     line-height: 1.19em;
 }
 p {
@@ -35,16 +36,14 @@ p {
     margin-top: 5px;
 }
 .filter, .filter button {
-    font-weight: 700;
     font-size: 1.06em;
     line-height: 1.25em;
 }
 input, footer h3 {
-    font-weight: 700;
     font-size: 1.12em;
     line-height: 1.31em;
 }
-.top-main-section p, footer p {
+.top-section p, footer p {
     font-weight: 400;
     font-size: 1em;
     line-height: 1.19em;
@@ -73,20 +72,20 @@ a {
     width: 3.8em;
     height: 1.2em;
 }
-nav {
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
 }
-.navigation a {
+.link-navigation a {
     margin-right: 3.5em;
     font-weight: 500;
     font-size: 1em;
     line-height: 1.18em;
     color: #000;
 }
-.navigation a:hover {
+.link-navigation a:hover {
     border-top: 2px var(--first-color) solid;
     color: var(--first-color);
     width: 100%;
@@ -94,16 +93,16 @@ nav {
 }
 /*** Main ***/
 /*** Top Section ***/
-.top-main-section {
+.top-section {
     padding: 0 30px;
 }
-.top-main-section h2 {
+.top-section h2 {
     margin-bottom: 0;
 }
-.info-main-section {
+.info-top-section {
     margin: 0 0 20px 0;
 }
-.top-main-section .form {
+.top-section .form {
     margin: 10px 0;
 }
 /*** Search Bar ***/
@@ -171,8 +170,8 @@ input::placeholder {
 .glass-icon {
     display: none;
 }
-/*** Main Section ***/
-.main-section-container {
+/*** First Section ***/
+.first-section {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -220,13 +219,13 @@ input::placeholder {
     color: var(--third-color)
 }
 /*** Right-section Popularity ***/
-.right-section-title {
+.title-right-section {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.right-section-title i {
+.title-right-section i {
     color: var(--first-color);
 }
 .right-section {
@@ -260,8 +259,8 @@ input::placeholder {
     border-radius: 20px 0 0 20px;
     object-fit: cover;
 }
-/*** Activity Section ***/
-#activités {
+/*** Second Section ***/
+.second-section {
     padding: 0 30px;
 }
 /* Card Activity */
@@ -279,7 +278,7 @@ input::placeholder {
     padding-left: 15px;
 }
 /*** Footer ***/
-footer {
+.footer {
     background: var(--third-color);
     width: 95%;
     margin: 40px 31px 0;
@@ -296,7 +295,7 @@ footer {
         max-width: 100%;
     }
     /*** Header ***/
-    nav {
+    .navigation {
         padding: 30px 30px 15px 30px;
     }
     /*** Search Bar ***/
@@ -309,7 +308,7 @@ footer {
         display: flex;
     }
     /*** Main Section ***/
-    .main-section-container {
+    .first-section {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -346,13 +345,13 @@ footer {
     .right-section {
         width: 95%;
     }
-    .right-section-title {
+    .title-right-section {
         justify-content: space-between;
     }
     .title-right-section {
         margin-left: 25px
     }
-    .right-section-title i {
+    .title-right-section i {
         margin-right: 30px;
     }
     .card-right-section {
@@ -388,11 +387,11 @@ footer {
         padding-left: 10px;
     }
     /* Footer */
-    footer {
+    .footer {
         width: 95%;
         justify-content: space-evenly;
     }
-    footer p {
+    .link-footer p {
         margin-bottom: 10px;
     }
 }
@@ -402,7 +401,7 @@ footer {
         max-width: 100%;
     }
     /*** Header ***/
-    nav {
+    .navigation {
         display: flex;
         flex-direction: column;
         padding: 0;
@@ -412,38 +411,38 @@ footer {
     .img-logo {
         padding: 20px 0 40px 0;
     }
-    .navigation {
+    .link-navigation {
         display: flex;
         width: 100%;
     }
-    .navigation a {
+    .link-navigation a {
         padding-bottom: 30px;
         margin: 0;
         width: 100%;
         text-align: center;
     }
-    .navigation a:hover {
+    .link-navigation a:hover {
         border-top: none;
         border-bottom: 3px var(--first-color) solid;
         color: var(--first-color);
         padding-top: 0;
     }
     /*** Main ***/
-    .top-main-section h2 {
+    .top-section {
+        padding: 0 15px;
+    }
+    .top-section h2 {
         margin-bottom: 10px;
         line-height: 1em;
     }
-    .text-main-section p {
+    .text-top-section p {
         margin: 0;
     }
-    .info-main-section {
+    .info-top-section {
         margin: 20px auto;
     }
-    .top-main-section {
-        padding: 0 15px;
-    }
     /*** Search bar & Filter ***/
-    .top-main-section .form {
+    .top-section .form {
         margin: 20px 0;
         display: flex;
         justify-content: center;
@@ -482,8 +481,8 @@ footer {
     .btn-search-bar {
         display: none;
     }
-    /*** Main Section ***/
-    .main-section-container {
+    /*** First Section ***/
+    .first-section {
         flex-direction: column-reverse;
     }
     /*** Left Section ***/
@@ -518,7 +517,7 @@ footer {
         width: 100%;
         border-radius: 0;
     }
-    .right-section-title {
+    .title-right-section {
         width: 100%;
         justify-content: space-between;
     }
@@ -530,19 +529,14 @@ footer {
     .card-popularity {
         width: 90%;
     }
-    /*** Activity Section ***/
-    article {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    /*** Second Section ***/
+    .title-activity-section {
+        width: 100%;
     }
     .activity-section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
-    }
-    .title-section-activity {
         width: 100%;
     }
     .activity-section div {
@@ -557,7 +551,7 @@ footer {
         margin: 10px;
     }
     /*** Footer ***/
-    footer {
+    .footer {
         display: flex;
         flex-direction: column;
         height: auto;

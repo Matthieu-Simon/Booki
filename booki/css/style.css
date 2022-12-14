@@ -186,7 +186,7 @@ input::placeholder {
     flex-direction: column;
 }
 .title-left-section {
-    margin-left: 25px;
+    margin-left: 32px;
 }
 .card-left-section {
     display: flex;
@@ -220,7 +220,7 @@ input::placeholder {
 }
 /*** Right-section Popularity ***/
 .title-right-section {
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -280,10 +280,10 @@ input::placeholder {
 /*** Footer ***/
 .footer {
     background: var(--third-color);
-    width: 95%;
     margin: 40px 31px 0;
 }
 .link-footer {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 30px 0;
@@ -309,7 +309,6 @@ input::placeholder {
     }
     /*** Main Section ***/
     .first-section {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -355,7 +354,6 @@ input::placeholder {
         margin-right: 30px;
     }
     .card-right-section {
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
@@ -388,7 +386,7 @@ input::placeholder {
     }
     /* Footer */
     .footer {
-        width: 95%;
+        display: flex;
         justify-content: space-evenly;
     }
     .link-footer p {
@@ -397,9 +395,6 @@ input::placeholder {
 }
 /*** Mode Mobile ***/
 @media screen and (max-width: 768px) {
-    body {
-        max-width: 100%;
-    }
     /*** Header ***/
     .navigation {
         display: flex;
@@ -530,11 +525,7 @@ input::placeholder {
         width: 90%;
     }
     /*** Second Section ***/
-    .title-activity-section {
-        width: 100%;
-    }
     .activity-section {
-        display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -552,7 +543,6 @@ input::placeholder {
     }
     /*** Footer ***/
     .footer {
-        display: flex;
         flex-direction: column;
         height: auto;
         padding-bottom: 32px;

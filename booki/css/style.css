@@ -19,6 +19,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     width: 1400px;
+    max-width: 100%;
     font-family: 'Raleway', sans-serif;
 }
 h2, h4, .filter, .filter button, input, .footer h3 {
@@ -39,11 +40,11 @@ p {
     font-size: 1.06em;
     line-height: 1.25em;
 }
-input, footer h3 {
+input, .footer h3 {
     font-size: 1.12em;
     line-height: 1.31em;
 }
-.top-section p, footer p {
+.top-section p, .footer li {
     font-weight: 400;
     font-size: 1em;
     line-height: 1.19em;
@@ -201,16 +202,15 @@ input::placeholder {
 }
 /*** Card Location ***/
 .card-location {
-    margin: 0 5px 20px 0;
+    margin-bottom: 20px;
     padding-bottom: 5px;
 }
 .card-location img {
-    width: 246px;
+    width: 15.38em;
     height: 124px;
-    border: 3px solid var(--fourth-color);
+    margin: 5px 5px 0;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
-    padding: 1px;
 }
 .stars-location {
     color: var(--first-color);
@@ -222,11 +222,12 @@ input::placeholder {
 .title-right-section {
     width: 95%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 .title-right-section i {
     color: var(--first-color);
+    margin-left: 110px;
 }
 .right-section {
     background: var(--third-color);
@@ -235,10 +236,6 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.right-section h2 i {
-    margin-left: 110px;
-    color: #0065FC;
 }
 .card-right-section {
     display: flex;
@@ -254,7 +251,7 @@ input::placeholder {
     padding: 5px;
 }
 .card-popularity img {
-    width: 137px;
+    width: 8.56em;
     height: 100%;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
@@ -288,12 +285,16 @@ input::placeholder {
     justify-content: space-around;
     padding: 30px 0;
 }
+.link-footer ul {
+    padding: 0;
+}
+.link-footer li {
+    list-style-type: none;
+    margin-top: 0.6em;
+}
 /***** MEDIA QUERIES *****/
 /*** Mode Tablette ***/
-@media screen and (max-width: 992px) {
-    body {
-        max-width: 100%;
-    }
+@media screen and (max-width: 991px) {
     /*** Header ***/
     .navigation {
         padding: 30px 30px 15px 30px;
@@ -394,7 +395,7 @@ input::placeholder {
     }
 }
 /*** Mode Mobile ***/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     /*** Header ***/
     .navigation {
         display: flex;

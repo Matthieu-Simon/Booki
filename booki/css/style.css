@@ -97,8 +97,8 @@ a {
 .top-section {
     padding: 0 30px;
 }
-.top-section h2 {
-    margin-bottom: 0;
+.top-section h1 {
+    margin-bottom: 0.4em;
 }
 .info-top-section {
     margin: 0 0 20px 0;
@@ -182,12 +182,11 @@ input::placeholder {
     background: var(--third-color);
     border-radius: 20px;
     width: 65%;
-    height: 100%;
     display: flex;
     flex-direction: column;
 }
 .title-left-section {
-    margin-left: 32px;
+    margin-left: 2em;
 }
 .card-left-section {
     display: flex;
@@ -202,11 +201,11 @@ input::placeholder {
 }
 /*** Card Location ***/
 .card-location {
-    margin-bottom: 20px;
+    margin: 5px 5px 20px;
     padding-bottom: 5px;
 }
 .card-location img {
-    width: 15.38em;
+    width: 246px;
     height: 124px;
     margin: 5px 5px 0;
     border-radius: 20px 20px 0 0;
@@ -220,10 +219,10 @@ input::placeholder {
 }
 /*** Right-section Popularity ***/
 .title-right-section {
-    width: 95%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 0 1em;
 }
 .title-right-section i {
     color: var(--first-color);
@@ -330,7 +329,7 @@ input::placeholder {
         margin-bottom: 50px;
     }
     .card-location {
-        width: 25%;
+        width: 28%;
     }
     .card-location img {
         width: 96%;
@@ -338,21 +337,13 @@ input::placeholder {
     .card-location h4, p, i {
         margin-bottom: 5px;
     }
-    .card-left-section {
-        justify-content: space-around;
-    }
     /*** Right Section ***/
     .right-section {
         width: 95%;
     }
     .title-right-section {
+        width: 92%;
         justify-content: space-between;
-    }
-    .title-right-section {
-        margin-left: 25px
-    }
-    .title-right-section i {
-        margin-right: 30px;
     }
     .card-right-section {
         flex-direction: row;
@@ -384,14 +375,6 @@ input::placeholder {
     .title-activity {
         margin: 5px;
         padding-left: 10px;
-    }
-    /* Footer */
-    .footer {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .link-footer p {
-        margin-bottom: 10px;
     }
 }
 /*** Mode Mobile ***/

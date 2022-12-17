@@ -60,8 +60,8 @@ a {
     justify-content: space-between;
     margin-left: 15px;
 }
-.card-content h4 {
-    margin: 0;
+.card-content h4, p, i {
+    margin: 5px 0;
 }
 .card-border {
     background-color: var(--fourth-color);
@@ -317,10 +317,6 @@ input::placeholder {
     .card-content {
         margin-left: 10px;
     }
-    .card-content h4, p {
-        margin-bottom: 3px;
-        margin: 0;
-    }
     .card-location, .card-popularity {
         font-size: 0.87em;
     }
@@ -334,9 +330,6 @@ input::placeholder {
     }
     .card-location img {
         width: 96%;
-    }
-    .card-location h4, p, i {
-        margin-bottom: 5px;
     }
     /*** Right Section ***/
     .right-section {
@@ -353,9 +346,6 @@ input::placeholder {
     }
     .card-popularity {
         width: 230px;
-    }
-    .card-popularity h4, p, i {
-        margin-bottom: 5px;
     }
     .card-popularity img {
         border-radius: 20px 0 0 20px;
@@ -382,11 +372,9 @@ input::placeholder {
 @media screen and (max-width: 767px) {
     /*** Header ***/
     .navigation {
-        display: flex;
         flex-direction: column;
         padding: 0;
         border-bottom: 3px solid var(--third-color);
-        width: 100%;
     }
     .img-logo {
         padding: 20px 0 40px 0;
@@ -404,22 +392,15 @@ input::placeholder {
     .link-navigation a:hover {
         border-top: none;
         border-bottom: 3px var(--first-color) solid;
-        color: var(--first-color);
         padding-top: 0;
     }
     /*** Main ***/
     .top-section {
         padding: 0 15px;
     }
-    .top-section h2 {
+    .top-section h1 {
         margin-bottom: 10px;
         line-height: 1em;
-    }
-    .text-top-section p {
-        margin: 0;
-    }
-    .info-top-section {
-        margin: 20px auto;
     }
     /*** Search bar & Filter ***/
     .top-section .form {
@@ -428,7 +409,6 @@ input::placeholder {
         justify-content: center;
     }
     .filter {
-        display: flex;
         flex-direction: column;
         align-items: stretch;
         width: 100%;
@@ -444,7 +424,6 @@ input::placeholder {
         font-size: 0.8em;
     }
     .tag {
-        display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
@@ -485,10 +464,7 @@ input::placeholder {
         margin: 0 0 20px;
     }
     .card-location img {
-        width: 98.5%;
-    }
-    .card-content p {
-        margin: 0;
+        width: 97.5%;
     }
     .add-more-link {
         display: none;
@@ -499,9 +475,7 @@ input::placeholder {
         border-radius: 0;
     }
     .card-right-section {
-        display: flex;
         flex-direction: column;
-        align-items: center;
     }
     .card-popularity {
         width: 90%;
@@ -515,7 +489,6 @@ input::placeholder {
     .activity-section {
         flex-direction: column;
         align-items: center;
-        width: 100%;
     }
     .activity-section div {
         width: 100%;
@@ -537,7 +510,6 @@ input::placeholder {
         margin: 0;
     }
     .link-footer {
-        width: 50%;
         flex-direction: column;
         margin-left: 20px;
     }

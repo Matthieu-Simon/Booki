@@ -59,6 +59,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     margin-left: 15px;
+    cursor: pointer;
 }
 .card-content h4, p, i {
     margin: 5px 0;

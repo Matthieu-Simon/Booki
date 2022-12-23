@@ -15,7 +15,7 @@
 } */
 
 body {
-    margin: 0;
+    margin: auto;
     padding: 0;
     box-sizing: border-box;
     width: 1400px;
@@ -37,7 +37,7 @@ p {
     margin-top: 5px;
 }
 .filter, .filter button {
-    font-size: 1.06em;
+    font-size: 1em;
     line-height: 1.25em;
 }
 input, .footer h3 {
@@ -70,15 +70,18 @@ a {
     box-shadow: 1px 2px 2px 1px var(--third-color);
 }
 /*** Header ***/
-.img-logo {
-    width: 3.8em;
-    height: 1.2em;
-}
-.navigation {
+.header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+}
+.img-logo {
+    margin-left: 1.9em;
+    height: 1.2em;
+}
+.link-navigation {
+    list-style-type: none;
+    display: flex;
 }
 .link-navigation a {
     margin-right: 3.5em;
@@ -86,12 +89,13 @@ a {
     font-size: 1em;
     line-height: 1.18em;
     color: #000;
+    padding: 0 25px;
 }
 .link-navigation a:hover {
     border-top: 2px var(--first-color) solid;
     color: var(--first-color);
     width: 100%;
-    padding-top: 20px;
+    padding-top: 0.9em;
 }
 /*** Main ***/
 /*** Top Section ***/
@@ -296,7 +300,7 @@ input::placeholder {
 }
 /***** MEDIA QUERIES *****/
 /*** Mode Tablette ***/
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     /*** Header ***/
     .navigation {
         padding: 30px 30px 15px 30px;
@@ -371,10 +375,12 @@ input::placeholder {
     }
 }
 /*** Mode Mobile ***/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     /*** Header ***/
-    .navigation {
+    .header-nav {
         flex-direction: column;
+    }
+    .navigation {
         padding: 0;
         border-bottom: 3px solid var(--third-color);
     }

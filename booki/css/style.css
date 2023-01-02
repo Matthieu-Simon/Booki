@@ -213,12 +213,13 @@ input::placeholder {
 /*** Card Location ***/
 .card-location {
     margin: 16px 0;
+    width: 26%;
 }
 .card-location h3, p, i {
     margin: 3px 0;
 }
 .card-location img {
-    width: 246px;
+    width: 96%;
     height: 124px;
     margin: 5px;
     border-radius: 20px 20px 0 0;
@@ -262,7 +263,7 @@ input::placeholder {
     height: 144px;
 }
 .card-popularity img {
-    width: 137px;
+    width: 35%;
     height: 133px;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
@@ -363,12 +364,6 @@ input::placeholder {
     .left-section {
         width: 95%;
         margin-bottom: 50px;
-    }
-    .card-location {
-        width: 28%;
-    }
-    .card-location img {
-        width: 96%;
     }
     /*** Right Section ***/
     .right-section {

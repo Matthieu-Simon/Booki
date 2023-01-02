@@ -67,7 +67,7 @@ a {
 .card-border {
     background-color: var(--fourth-color);
     border-radius: 20px;
-    box-shadow: 1px 1px 2px 2px rgb(234, 231, 231);
+    box-shadow: 0 0 0 3px rgba(240, 239, 239, 0.905);
     
 }
 /*** Header ***/
@@ -141,6 +141,7 @@ input::placeholder {
     background-color: var(--first-color);
     color: var(--fourth-color);
     border-radius: 0 15px 15px 0;
+    font-size: 1em;
 }
 .filter {
     display: flex;
@@ -149,6 +150,7 @@ input::placeholder {
 }
 .filter p {
     margin-right: 25px;
+    font-weight: bold;
 }
 .filter button {
     height: 50px;
@@ -280,6 +282,7 @@ input::placeholder {
 }
 /*** Second Section ***/
 .second-section {
+    margin-top: 16px;
     padding: 40px 30px 30px;
 }
 /* Card Activity */
@@ -368,7 +371,7 @@ input::placeholder {
     /*** Right Section ***/
     .right-section {
         width: 95%;
-        height: 260px;
+        padding-bottom: 32px;
     }
     .title-right-section {
         width: 90%;
@@ -451,8 +454,7 @@ input::placeholder {
     }
     /*** Search bar & Filter ***/
     .top-section .form {
-        margin: 19.2px 0;
-        display: flex;
+        margin: 19px 0;
         justify-content: center;
     }
     .filter {
@@ -476,6 +478,12 @@ input::placeholder {
     .tag {
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+    input {
+        width: 100%;
+    }
+    .search-bar {
+        width: 100%;
     }
     .search-bar button i {
         color: var(--fourth-color);
@@ -523,7 +531,7 @@ input::placeholder {
     .right-section {
         width: 100%;
         border-radius: 0;
-        height: 570px;
+        margin-bottom: 16px;
     }
     .card-right-section {
         flex-direction: column;
@@ -532,6 +540,7 @@ input::placeholder {
     }
     .card-popularity {
         width: 90%;
+        margin-bottom: 16px;
     }
     .title-right-section {
         margin: 0 0 0 24px;

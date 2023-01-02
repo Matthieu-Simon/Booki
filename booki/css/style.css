@@ -503,7 +503,7 @@ input::placeholder {
     }
     .title-left-section {
         width: 92%;
-        margin: 8px 0;
+        margin: 16px 0;
     }
     .card-left-section {
         flex-direction: column;
@@ -511,7 +511,7 @@ input::placeholder {
     }
     .card-location {
         width: 100%;
-        margin: 0 0 20px;
+        margin: 8px 0;
     }
     .card-location img {
         width: 97.5%;
@@ -523,10 +523,12 @@ input::placeholder {
     .right-section {
         width: 100%;
         border-radius: 0;
-        height: 0%;
+        height: 570px;
     }
     .card-right-section {
         flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
     }
     .card-popularity {
         width: 90%;
@@ -561,9 +563,7 @@ input::placeholder {
     }
     /*** Footer ***/
     .footer {
-        height: auto;
-        padding-bottom: 32px;
-        width: 100%;
+        padding-bottom: 20px;
         margin: auto;
     }
     .link-footer {

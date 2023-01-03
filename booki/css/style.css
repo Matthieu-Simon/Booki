@@ -67,7 +67,7 @@ a {
 .card-border {
     background-color: var(--fourth-color);
     border-radius: 20px;
-    box-shadow: 0 0 0 3px rgba(240, 239, 239, 0.905);
+    box-shadow: 1px 1px 7px 2px rgba(148, 148, 148, 0.55);
     
 }
 /*** Header ***/

@@ -9,11 +9,6 @@
     --third-color: #F2F2F2; /* var(--third-color) */
     --fourth-color: #fff; /* var(--fourth-color) */
 }
-
-/* * {
-    border: 1px red solid;
-} */
-
 body {
     margin: auto;
     padding: 0;
@@ -68,7 +63,6 @@ a {
     background-color: var(--fourth-color);
     border-radius: 20px;
     box-shadow: 1px 1px 7px 2px rgba(148, 148, 148, 0.55);
-    
 }
 /*** Header ***/
 .header-nav {
@@ -423,6 +417,9 @@ input::placeholder {
     .header-nav {
         flex-direction: column;
     }
+    ul {
+        padding-inline-start: 0;
+    }
     .navigation {
         width: 100%;
         padding: 0;
@@ -432,17 +429,15 @@ input::placeholder {
         padding: 20px 0 40px 0;
     }
     .link-navigation {
-        display: flex;
-        width: 100%;
-        padding: 0;
         justify-content: space-evenly;
     }
     .link-navigation a {
-        padding: 0 64px 16px;
+        padding: 0 65px 16px;
     }
     .link-navigation a:hover {
         border-top: none;
         border-bottom: 3px var(--first-color) solid;
+        padding-top: 0;
     }
     /*** Main ***/
     .top-section {
@@ -551,7 +546,7 @@ input::placeholder {
     }
     .second-section h2 {
         width: 50%;
-        margin: 0;
+        margin: 0 0 8px;
         line-height: 1.2em;
     }
     .activity-section {
